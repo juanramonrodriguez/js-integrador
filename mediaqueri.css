@@ -1,0 +1,101 @@
+@media (max-width: 1212px) {
+  .navbar-list {
+    gap: 20px;
+  }
+  .section-hero {
+    display: flex;
+    justify-content: end;
+  }
+  .img img {
+    display: flex;
+    width: 400px;
+    height: auto;
+  }
+  .card {
+    gap: 10px;
+  }
+  .footer {
+    display: flex;
+    padding: 50px;
+    gap: 0;
+  }
+  .contact,
+  .soporte,
+  .acerca,
+  .social {
+    display: flex;
+    margin: 50px 0 30px 10px;
+    width: 300px;
+    height: auto;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1070px) {
+  .img img {
+    display: none;
+  }
+  .info img {
+    width: 500px;
+    height: auto;
+  }
+  .card {
+    gap: 90px;
+  }
+}
+@media (max-width: 816px) {
+  .navbar {
+    padding: 10px 0;
+  }
+  .navbar img {
+    display: none;
+  }
+  .info img {
+    display: none;
+  }
+  .info-text {
+    left: 0;
+    padding: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .title {
+    width: 450px;
+  }
+  .navbar-list {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    align-items: center;
+    padding: 4px 30px;
+    gap: 25px;
+    z-index: 2;
+    -webkit-border-radius: 0px 0px 15px 15px;
+    -moz-border-radius: 0px 0px 15px 15px;
+    -ms-border-radius: 0px 0px 15px 15px;
+    -o-border-radius: 0px 0px 15px 15px;
+  }
+
+  .menu-label {
+    display: flex;
+  }
+  .navbar {
+    gap: 200px;
+  }
+  .open-menu {
+    display: flex;
+  }
+}

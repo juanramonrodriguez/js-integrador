@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integrador Js</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animaciones.css" />
+    <link rel="stylesheet" href="mediaqueri.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="menu-label">
+          <i class="fa-solid fa-bars-staggered" style="color: #01060e"></i>
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Productos</a></li>
+          <img src="./assets/img/Logo/logo (1).png" alt="" />
+          <li><a href="#">Iniciar Sesion</a></li>
+          <li><a href="#">Registrarse</a></li>
+        </ul>
+        <div class="cart-label">
+          <i class="fa-solid fa-cart-shopping cart-icon">
+            <div class="cart-bubble">0</div>
+          </i>
+        </div>
+        <div class="cart">
+          <h2>TUS PRODUCTOS</h2>
+          <div class="item-product">
+          
+          </div>
+          <div class="total">
+    
+          </div>
+          <button class="btn-comprar">Comprar</button>
+          <button class="btn-delete">Vaciar Carrito</button>
+        </div>
+        </div>
+      </div>
+
+        <div class="overlay"></div>
+      </nav>
+    </header>
+    <!-----------------hero----------------------------------->
+    <main>
+      <section class="hero">
+        <div class="section-hero">
+          <div class="title">
+            <h1>
+              El Sonido de
+              <br />
+              Estudio que Exiges
+            </h1>
+            <div class="parrafo">
+              <p>
+                El clásico sonido de estudio M20x de alta fidelidad con bajos
+                mejorados ahora es suyo para llevarlo a donde quiera que vaya.
+              </p>
+            </div>
+            <div class="boton">
+              <button class="btn-mas">VER MAS</button>
+            </div>
+          </div>
+          <div class="img">
+            <img src="./assets/img/ath-m50xbt2_01_1.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <img src="./assets/img/Products/madera.png" alt="" />
+        <div class="info-text">
+          <h2>Pasión por Escuchar</h2>
+          <p>
+            Partiendo de nuestra pasión por la música, hemos llegado a diseñar
+            auriculares, tocadiscos y micrófonos aclamados, sin dejar de ser una
+            empresa familiar y conservando la convicción de que todo el mundo
+            debería tener acceso al sonido de alta calidad
+          </p>
+        </div>
+      </section>
+      <section class="card">
+        <div class="card-info1">
+          <img src="./assets/img/card/auriculares.webp" alt="" />
+          <p>
+            Una Experiencia Musical Revoluionaria, Una carga completa te brinda
+            hasta 60 horas de reproducción, una carga rápida de 10 minutos
+            brinda hasta 3 horas.
+          </p>
+        </div>
+        <div class="card-info2">
+          <img src="./assets/img/card/microfono.webp" alt="" />
+          <p>
+            El patrón polar hipercaioide proporciona un aislamiento vocal máximo
+            para un sonido de calidad profecional.
+          </p>
+        </div>
+        <div class="card-info3">
+          <img src="./assets/img/card/tocadisco.webp" alt="" />
+          <p>
+            Le ofrece todas las fantásticas funciones de un tocadiscos estéreo
+            de transmisión por correa totalmente automático.
+          </p>
+        </div>
+      </section>
+      <section class="categorias">
+        <!---<img src="./assets/img/music-4092614_1280.jpg" alt="" />--->
+        <div class="products">
+          <h2>Productos</h2>
+        </div>
+        <div class="categories">
+          <button class="category active">Todos</button>
+          <button class="category" data-category="microfonos">
+            Microfonos
+          </button>
+          <button class="category" data-category="auriculares">
+            Auriculares
+          </button>
+          <button class="category" data-category="tocadiscos">
+            Tocadiscos
+          </button>
+        </div>
+      </section>
+      <div class="cards-products">
+    
+      </div>
+
+      <div class="ver-mas">
+        <button class="ocultar">Ver Mas</button>
+      </div>
+      
+      <section class="footer">
+        <div class="contact">
+          <p>Contacto</p>
+          <p>Catalogo audio-technica</p>
+        </div>
+        <div class="soporte">
+          <h2>SOPORTE</h2>
+          <p>FAQ de productos</p>
+          <p>Garantías</p>
+          <p>Servicio</p>
+        </div>
+        <div class="acerca">
+          <h2>ACERCA DE A-T</h2>
+          <p>Historia</p>
+          <p>Notas de Prensa</p>
+        </div>
+        <div class="social">
+          <h2>SOCIAL</h2>
+          <p><i class="fa-brands fa-tiktok"></i> TikTok</p>
+          <p><i class="fa-brands fa-facebook"></i>Facebook</p>
+          <p><i class="fa-brands fa-twitter"></i>Twitter</p>
+          <p><i class="fa-brands fa-square-instagram"></i>Instagram</p>
+          <p><i class="fa-brands fa-youtube"></i>Youtube</p>
+        </div>
+      </section>
+      <div class="add-modal"></div>
+    </main>
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

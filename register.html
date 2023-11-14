@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="register.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="menu-label">
+          <i class="fa-solid fa-bars-staggered" style="color: #01060e"></i>
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Productos</a></li>
+          <img src="./assets/img/Logo/logo (1).png" alt="" />
+          <li><a href="#">Iniciar Sesion</a></li>
+          <li><a href="#">Registrarse</a></li>
+        </ul>
+        <div class="cart-label">
+          <i class="fa-solid fa-cart-shopping cart-icon">
+            <div class="cart-bubble">0</div>
+          </i>
+        </div>
+        </div>
+      </div>
+
+        <div class="overlay"></div>
+      </nav>
+    </header>
+    <!--------------------------Registro--------------------------------------->
+    <main>
+      <form class="form">
+        <p class="message">Registro</p>
+        <div class="flex">
+          <div class="form-field">
+            <input class="input" id="nombre" type="text" placeholder="" required="" />
+            <span>Nombre</span>
+            <small></small>
+          </div>
+
+          <div class="form-field">
+            <input class="input" id="apellido" type="text" placeholder="" required="" />
+            <span>Apellido</span>
+            <small></small>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <input class="input" id="email" type="email" placeholder="" required="" />
+          <span>Email</span>
+          <small></small>
+        </div>
+
+        <div class="form-field">
+          <input class="input" id="password" type="password" placeholder="" required="" />
+          <span>Contraseña</span>
+          <small></small>
+        </div>
+        <div class=" form-field">
+          <input class="input" id="telefono" type="tel" placeholder="" required="" />
+          <span>Telefono</span>
+          <small></small>
+        </div>
+        <button class="submit">Registrar</button>
+        <p class="signin">
+          Ya tiene una cuenta ? <a href="#">Inicar Sesión</a>
+        </p>
+      </form>
+    </main>
+    
+    <script src="./register.js"></script>
+  </body>
+</html>

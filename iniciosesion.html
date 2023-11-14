@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio sesion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="iniciosesion.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="menu-bar">
+          <ul class="lista">
+            <a href="./index.html">
+              <li class="lista-menu">INICIO</li>
+            </a>
+
+            <li class="lista-menu">PRODUCTOS</li>
+            <li class="lista-menu">CONTACTO</li>
+          </ul>
+        </div>
+        <img class="img-logo" src="./assets/img/Logo/logo (1).png" alt="" />
+        <div class="menu-usuario">
+          <ul class="usuario">
+            <a href="./register.html">
+              <li class="usuario-li">Registro</li>
+            </a>
+            <li class="usuario-li">Iniciar Sesion</li>
+            <div class="cart-label">
+              <i id="icono" class="fa-solid fa-cart-shopping">
+                <div class="cart-bubble">0</div>
+              </i>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <form class="form">
+        <p class="message">Inicio de Sesion</p>
+        <div class="flex">
+          <label>
+            <input class="input" type="email" placeholder="" required="" />
+            <span>E-mail</span>
+          </label>
+
+          <label>
+            <input class="input" type="password" placeholder="" required="" />
+            <span>Contraseña</span>
+          </label>
+          <button class="submit">Iniciar Sesión</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

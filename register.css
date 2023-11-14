@@ -1,0 +1,125 @@
+body {
+  background-image: url("./assets/img/fondoRegistro.webp");
+}
+
+.usuario li {
+  display: flex;
+  color: white;
+}
+.lista li {
+  display: flex;
+  color: white;
+}
+.cart-label i {
+  display: none;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 800px;
+}
+.form {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  right: 350px;
+  gap: 30px;
+  max-width: 500px;
+  padding: 20px;
+  margin-top: 800px;
+  border-radius: 20px;
+  border: 2px solid #38c215;
+  background: rgb(36, 33, 33);
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+}
+.message,
+.signin {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.signin a {
+  color: #38c215;
+}
+
+.form-field {
+  position: relative;
+}
+
+.input {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.form-field .input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form-field .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form-field .input:focus + span,
+.form-field .input:valid + span {
+  color: white;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
+
+  background-color: transparent;
+}
+
+.submit:hover {
+  background-color: #2b2f3096;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+.form-field.error input {
+  border: 1px solid red;
+}
+.form-field.correcto input {
+  border: 1px solid rgb(0, 255, 21);
+}
+.form-field small {
+  display: flex;
+  color: rgb(211, 59, 59);
+}
