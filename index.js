@@ -21,6 +21,9 @@ const lastName = document.getElementById("apellido");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const phone = document.getElementById("tel");
+//--------------------------------------------------------
+const logOutBtn = document.getElementById("btn-logout");
+const userName = document.querySelector(".user-name");
 
 //seteamos
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -344,10 +347,25 @@ const error = (input, message) => {
   formField.classList.add("error");
   console.log(formField);
 };
+//------------------------------user name, salir---------------
+const activeUser = JSON.parse(sessionStorage.getItem("activeUser"));
+console.log(activeUser);
 
-const checkInput = (input) => {};
+const showUserName = () => {
+  userName.textContent = `${activeUser.name}`;
+  cartBtn.classList.add("mostrar-cart-label");
+};
+const logOut = () => {
+  if (window.confirm("Estas seguro que deseas cerrar sesion?")) {
+    sessionStorage.removeItem("activeUser");
+    window.location.href = "iniciosesion.html";
+    alert("Cerraste sesion");
+  }
+};
 
-const init = (productsItem) => {
+//const checkInput = (input) => {};
+
+const init = () => {
   renderPoducts(appState.products[0]);
   verMas.addEventListener("click", masProducts);
   containerCategory.addEventListener("click", aplicarFiltro);
@@ -362,6 +380,9 @@ const init = (productsItem) => {
   delet.addEventListener("click", deleteCart);
   renderCartBubble();
   //--------------------------------------------------
-  name.addEventListener("input", () => checkInput(name));
+  // name.addEventListener("input", () => checkInput(name));
+
+  showUserName();
+  logOutBtn.addEventListener("click", logOut);
 };
 init();

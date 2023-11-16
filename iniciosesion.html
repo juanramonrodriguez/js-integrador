@@ -10,49 +10,75 @@
   </head>
   <body>
     <header>
-      <div class="navbar">
-        <div class="menu-bar">
-          <ul class="lista">
-            <a href="./index.html">
-              <li class="lista-menu">INICIO</li>
-            </a>
+      <nav class="navbar">
+        <div class="menu-label">
+          <i class="fa-solid fa-bars-staggered" style="color: #01060e"></i>
+        </div>
 
-            <li class="lista-menu">PRODUCTOS</li>
-            <li class="lista-menu">CONTACTO</li>
-          </ul>
+        <ul class="navbar-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Productos</a></li>
+          <img src="./assets/img/Logo/logo (1).png" alt="" />
+          <li><a href="iniciosesion.html">Iniciar Sesion</a></li>
+          <li><a href="register.html">Registrarse</a></li>
+        </ul>
+        <div class="cart-label">
+          <i class="fa-solid fa-cart-shopping cart-icon">
+            <div class="cart-bubble">0</div>
+          </i>
         </div>
-        <img class="img-logo" src="./assets/img/Logo/logo (1).png" alt="" />
-        <div class="menu-usuario">
-          <ul class="usuario">
-            <a href="./register.html">
-              <li class="usuario-li">Registro</li>
-            </a>
-            <li class="usuario-li">Iniciar Sesion</li>
-            <div class="cart-label">
-              <i id="icono" class="fa-solid fa-cart-shopping">
-                <div class="cart-bubble">0</div>
-              </i>
-            </div>
-          </ul>
-        </div>
-      </div>
+      </nav>
     </header>
     <main>
-      <form class="form">
-        <p class="message">Inicio de Sesion</p>
-        <div class="flex">
-          <label>
-            <input class="input" type="email" placeholder="" required="" />
-            <span>E-mail</span>
-          </label>
-
-          <label>
-            <input class="input" type="password" placeholder="" required="" />
-            <span>Contraseña</span>
-          </label>
-          <button class="submit">Iniciar Sesión</button>
+      <div class="container-principal">
+        <div class="container">
+          <div class="title">
+            <h1>Sonido potente y de alta fidelidad</h1>
+          </div>
+          <div class="parrafo">
+            <p>
+              Diseños para hacer realidad el objetido de nuestro fundador: audio
+              de alta calidad para todos.
+            </p>
+          </div>
         </div>
-      </form>
+
+        <form class="form-login">
+          <h2 class="message">Inicio de Sesion</h2>
+          <div class="flex">
+            <div class="form-field">
+              <input
+                class="input"
+                id="email"
+                type="email"
+                placeholder=""
+                required=""
+              />
+              <span>Email</span>
+            </div>
+
+            <div class="form-field">
+              <input
+                class="input"
+                id="password"
+                type="password"
+                placeholder=""
+                required=""
+              />
+              <span>Contraseña</span>
+            </div>
+            <small id="form-error"></small>
+            <button class="submit">Iniciar sesion</button>
+            <p class="signin">
+              No tiene una cuenta ?😮
+              <a href="register.html">Registrate!!</a>
+            </p>
+          </div>
+        </form>
+      </div>
     </main>
+    <script src="sesion.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

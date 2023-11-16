@@ -7,6 +7,7 @@
   </head>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="register.css" />
+  <link rel="stylesheet" href="iniciosesion.css">
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -22,12 +23,12 @@
         </div>
 
         <ul class="navbar-list">
-          <li><a href="#">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="#">Contacto</a></li>
           <li><a href="#">Productos</a></li>
           <img src="./assets/img/Logo/logo (1).png" alt="" />
-          <li><a href="#">Iniciar Sesion</a></li>
-          <li><a href="#">Registrarse</a></li>
+          <li><a href="iniciosesion.html">Iniciar Sesion</a></li>
+          <li><a href="register.html">Registrarse</a></li>
         </ul>
         <div class="cart-label">
           <i class="fa-solid fa-cart-shopping cart-icon">
@@ -42,9 +43,21 @@
     </header>
     <!--------------------------Registro--------------------------------------->
     <main>
+      <div class="container-principal">
+        <div class="container">
+          <div class="title">
+            <h1>Sonido potente y de alta fidelidad</h1>
+          </div>
+          <div class="parrafo">
+            <p>
+              Diseños para hacer realidad el objetido de nuestro fundador: audio
+              de alta calidad para todos.
+            </p>
+          </div>
+        </div>
       <form class="form">
         <p class="message">Registro</p>
-        <div class="flex">
+        
           <div class="form-field">
             <input class="input" id="nombre" type="text" placeholder="" required="" />
             <span>Nombre</span>
@@ -56,28 +69,28 @@
             <span>Apellido</span>
             <small></small>
           </div>
-        </div>
+          
+          <div class="form-field">
+            <input class="input" id="email" type="email" placeholder="" required="" />
+            <span>Email</span>
+            <small></small>
+          </div>
 
-        <div class="form-field">
-          <input class="input" id="email" type="email" placeholder="" required="" />
-          <span>Email</span>
-          <small></small>
+          <div class="form-field">
+            <input class="input" id="password" type="password" placeholder="" required="" />
+            <span>Contraseña</span>
+            <small></small>
+          </div>
+          <div class=" form-field">
+            <input class="input" id="telefono" type="tel" placeholder="" required="" />
+            <span>Telefono</span>
+            <small></small>
+          </div>
+          <button class="submit">Registrar</button>
+          <p class="signin">
+            Ya tiene una cuenta ? <a href="iniciosesion.html">Inicar Sesión</a>
+          </p>
         </div>
-
-        <div class="form-field">
-          <input class="input" id="password" type="password" placeholder="" required="" />
-          <span>Contraseña</span>
-          <small></small>
-        </div>
-        <div class=" form-field">
-          <input class="input" id="telefono" type="tel" placeholder="" required="" />
-          <span>Telefono</span>
-          <small></small>
-        </div>
-        <button class="submit">Registrar</button>
-        <p class="signin">
-          Ya tiene una cuenta ? <a href="#">Inicar Sesión</a>
-        </p>
       </form>
     </main>
     

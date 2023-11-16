@@ -24,17 +24,21 @@
         </div>
 
         <ul class="navbar-list">
-          <li><a href="#">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="#">Contacto</a></li>
-          <li><a href="#">Productos</a></li>
+          <li><a href="#product">Productos</a></li>
           <img src="./assets/img/Logo/logo (1).png" alt="" />
-          <li><a href="#">Iniciar Sesion</a></li>
-          <li><a href="#">Registrarse</a></li>
+          <li><a href="iniciosesion.html">Iniciar Sesion</a></li>
+          <li><a href="register.html">Registrarse</a></li>
         </ul>
         <div class="cart-label">
           <i class="fa-solid fa-cart-shopping cart-icon">
             <div class="cart-bubble">0</div>
           </i>
+        </div>
+        <div class="user">
+          <span class="user-name"></span>
+          <button  id="btn-logout">Salir</button>
         </div>
         <div class="cart">
           <h2>TUS PRODUCTOS</h2>
@@ -42,7 +46,7 @@
           
           </div>
           <div class="total">
-    
+            
           </div>
           <button class="btn-comprar">Comprar</button>
           <button class="btn-delete">Vaciar Carrito</button>
@@ -169,5 +173,7 @@
     </main>
     <script src="./data.js"></script>
     <script src="./index.js"></script>
+    <script src="sesion.js"></script>
+  
   </body>
 </html>

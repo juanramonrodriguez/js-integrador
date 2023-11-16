@@ -1,5 +1,6 @@
 body {
-  background-image: url("./assets/img/fondoRegistro.webp");
+  background-image: url("./assets/img/asssa.webp");
+  background-size: cover;
 }
 
 .usuario li {
@@ -22,21 +23,16 @@ body {
   display: flex;
   position: absolute;
   flex-direction: column;
+  width: 350px;
   right: 350px;
   gap: 30px;
-  max-width: 500px;
   padding: 20px;
-  margin-top: 800px;
+
   border-radius: 20px;
-  border: 2px solid #38c215;
-  background: rgb(36, 33, 33);
+  border: 2px solid rgb(21, 53, 194);
+  background: #333333a4;
 }
 
-.flex {
-  display: flex;
-  width: 100%;
-  gap: 8px;
-}
 .message,
 .signin {
   font-size: 14.5px;
@@ -60,6 +56,10 @@ body {
   outline: 0;
   border: 1px solid white;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .form-field .input + span {
@@ -94,12 +94,12 @@ body {
   color: #fff;
   font-size: 16px;
   transform: 0.3s ease;
-
+  cursor: pointer;
   background-color: transparent;
 }
 
 .submit:hover {
-  background-color: #2b2f3096;
+  background-color: #17191a96;
 }
 
 @keyframes pulse {
@@ -114,12 +114,12 @@ body {
   }
 }
 .form-field.error input {
-  border: 1px solid red;
+  border: 1px solid rgb(224, 7, 7);
 }
 .form-field.correcto input {
   border: 1px solid rgb(0, 255, 21);
 }
 .form-field small {
   display: flex;
-  color: rgb(211, 59, 59);
+  color: rgb(37, 255, 8);
 }
