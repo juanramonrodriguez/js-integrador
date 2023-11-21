@@ -96,16 +96,18 @@ h1 {
 .card-info1:hover,
 .card-info2:hover,
 .card-info3:hover {
-  border: 1px solid #0e066f;
+  border: 1px solid rgb(22, 21, 21);
   transition-duration: 0.2s;
+  filter: drop-shadow(-1em 6em 80px rgb(100, 223, 186));
+  -webkit-filter: drop-shadow(-1em 6em 80px rgb(170, 86, 38));
 }
 .botones button:hover {
   border: 1px solid #0e066f;
-  box-shadow: 0px 0px 30px #0e066f;
+  box-shadow: 0px 0px 30px #06636f;
   transition-duration: 0.2s;
 }
 .product-card:hover {
-  border-bottom: 5px solid #0e066f;
-  box-shadow: 0px 0px 30px #100f14;
+  border-bottom: 5px solid #ff6d09;
+  box-shadow: 0px 0px 30px #ff6d09;
   transition-duration: 0.2s;
 }

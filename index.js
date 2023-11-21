@@ -22,8 +22,10 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const phone = document.getElementById("tel");
 //--------------------------------------------------------
-const logOutBtn = document.getElementById("btn-logout");
+const logOutBtn = document.querySelector(".btn-logout");
 const userName = document.querySelector(".user-name");
+const saludo = document.getElementById("saludo");
+const chau = document.getElementById("chau");
 
 //seteamos
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -42,7 +44,7 @@ const createCard = (product) => {
           <div class="name">
             <h2>${nombre}</h2>
             <p>Modelo: ${modelo}</p>
-            <p>Precio: $ ${precio}</p>
+            <p>Precio: US$ ${precio}</p>
           </div>
           <div class="btn-agregar">
               <button class="btn-add"
@@ -345,7 +347,6 @@ const isBetween = (input, min, max) => {
 const error = (input, message) => {
   const formField = input.parentElement;
   formField.classList.add("error");
-  console.log(formField);
 };
 //------------------------------user name, salir---------------
 const activeUser = JSON.parse(sessionStorage.getItem("activeUser"));
@@ -354,6 +355,9 @@ console.log(activeUser);
 const showUserName = () => {
   userName.textContent = `${activeUser.name}`;
   cartBtn.classList.add("mostrar-cart-label");
+  logOutBtn.classList.add("mostrar-btn-logout");
+  saludo.textContent = "Hola!! ";
+  chau.textContent = " ";
 };
 const logOut = () => {
   if (window.confirm("Estas seguro que deseas cerrar sesion?")) {

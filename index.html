@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="animaciones.css" />
     <link rel="stylesheet" href="mediaqueri.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -25,25 +24,24 @@
 
         <ul class="navbar-list">
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#product">Productos</a></li>
+          <li><a href="#footer">Contacto</a></li>
+          <li><a href="#categorias">Productos</a></li>
           <img src="./assets/img/Logo/logo (1).png" alt="" />
-          <li><a href="iniciosesion.html">Iniciar Sesion</a></li>
-          <li><a href="register.html">Registrarse</a></li>
-        </ul>
+          <li><a id="saludo" href="iniciosesion.html">Iniciar Sesion</a></li>
+          <div class="user">
+            <span class="user-name"></span>
+           <button class="btn-logout">Salir</button>
+          </div>
+            <li><a id="chau" href="register.html">Registrarse</a></li>
+          </ul>
         <div class="cart-label">
           <i class="fa-solid fa-cart-shopping cart-icon">
             <div class="cart-bubble">0</div>
           </i>
         </div>
-        <div class="user">
-          <span class="user-name"></span>
-          <button  id="btn-logout">Salir</button>
-        </div>
         <div class="cart">
           <h2>TUS PRODUCTOS</h2>
           <div class="item-product">
-          
           </div>
           <div class="total">
             
@@ -82,16 +80,16 @@
           </div>
         </div>
       </section>
-      <section class="info">
-        <img src="./assets/img/Products/madera.png" alt="" />
+      <section class="info"> 
         <div class="info-text">
-          <h2>Pasión por Escuchar</h2>
-          <p>
-            Partiendo de nuestra pasión por la música, hemos llegado a diseñar
-            auriculares, tocadiscos y micrófonos aclamados, sin dejar de ser una
-            empresa familiar y conservando la convicción de que todo el mundo
-            debería tener acceso al sonido de alta calidad
-          </p>
+            <h2>Pasión por Escuchar</h2>
+            <p>
+              Partiendo de nuestra pasión por la música, hemos llegado a diseñar
+              auriculares, tocadiscos y micrófonos aclamados, sin dejar de ser una
+              empresa familiar y conservando la convicción de que todo el mundo
+              debería tener acceso al sonido de alta calidad
+            </p>
+          
         </div>
       </section>
       <section class="card">
@@ -118,7 +116,7 @@
           </p>
         </div>
       </section>
-      <section class="categorias">
+      <section id="categorias">
         <!---<img src="./assets/img/music-4092614_1280.jpg" alt="" />--->
         <div class="products">
           <h2>Productos</h2>
@@ -144,10 +142,10 @@
         <button class="ocultar">Ver Mas</button>
       </div>
       
-      <section class="footer">
+      <section id="footer">
         <div class="contact">
           <p>Contacto</p>
-          <p>Catalogo audio-technica</p>
+          <a href="#categorias"><p>Catalogo audio-technica</p></a>
         </div>
         <div class="soporte">
           <h2>SOPORTE</h2>
